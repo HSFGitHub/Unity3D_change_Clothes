@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: 0c7560056123a499890ee060f71eb918
+timeCreated: 1506132262
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: b_Bip
+    100002: b_Head
+    100004: b_Hips
+    100006: b_LeftAnkle
+    100008: b_LeftArm
+    100010: b_LeftClav
+    100012: b_LeftForeArm
+    100014: b_LeftHand
+    100016: b_LeftIndex1
+    100018: b_LeftIndex2
+    100020: b_LeftIndex3
+    100022: b_LeftLeg
+    100024: b_LeftLegUpper
+    100026: b_LeftMiddle1
+    100028: b_LeftMiddle2
+    100030: b_LeftMiddle3
+    100032: b_LeftPinky1
+    100034: b_LeftPinky2
+    100036: b_LeftPinky3
+    100038: b_LeftRing1
+    100040: b_LeftRing2
+    100042: b_LeftRing3
+    100044: b_LeftThumb1
+    100046: b_LeftThumb2
+    100048: b_LeftThumb3
+    100050: b_LeftToe
+    100052: b_Neck
+    100054: b_RightAnkle
+    100056: b_RightArm
+    100058: b_RightClav
+    100060: b_RightForeArm
+    100062: b_RightHand
+    100064: b_RightIndex1
+    100066: b_RightIndex2
+    100068: b_RightIndex3
+    100070: b_RightLeg
+    100072: b_RightLegUpper
+    100074: b_RightMiddle1
+    100076: b_RightMiddle2
+    100078: b_RightMiddle3
+    100080: b_RightPinky1
+    100082: b_RightPinky2
+    100084: b_RightPinky3
+    100086: b_RightRing1
+    100088: b_RightRing2
+    100090: b_RightRing3
+    100092: b_RightThumb1
+    100094: b_RightThumb2
+    100096: b_RightThumb3
+    100098: b_RightToe
+    100100: b_Spine
+    100102: b_Spine1
+    100104: b_Spine2
+    100106: Bip001 Footsteps
+    100108: Bip001 HeadNub
+    100110: Bip001 L Finger0Nub
+    100112: Bip001 L Finger1Nub
+    100114: Bip001 L Finger2Nub
+    100116: Bip001 L Finger3Nub
+    100118: Bip001 L Finger4Nub
+    100120: Bip001 L Toe0Nub
+    100122: Bip001 R Finger0Nub
+    100124: Bip001 R Finger1Nub
+    100126: Bip001 R Finger2Nub
+    100128: Bip001 R Finger3Nub
+    100130: Bip001 R Finger4Nub
+    100132: Bip001 R Toe0Nub
+    100134: EFoot
+    100136: //RootNode
+    100138: WeaponPivotLeft
+    100140: WeaponPivotRight
+    400000: b_Bip
+    400002: b_Head
+    400004: b_Hips
+    400006: b_LeftAnkle
+    400008: b_LeftArm
+    400010: b_LeftClav
+    400012: b_LeftForeArm
+    400014: b_LeftHand
+    400016: b_LeftIndex1
+    400018: b_LeftIndex2
+    400020: b_LeftIndex3
+    400022: b_LeftLeg
+    400024: b_LeftLegUpper
+    400026: b_LeftMiddle1
+    400028: b_LeftMiddle2
+    400030: b_LeftMiddle3
+    400032: b_LeftPinky1
+    400034: b_LeftPinky2
+    400036: b_LeftPinky3
+    400038: b_LeftRing1
+    400040: b_LeftRing2
+    400042: b_LeftRing3
+    400044: b_LeftThumb1
+    400046: b_LeftThumb2
+    400048: b_LeftThumb3
+    400050: b_LeftToe
+    400052: b_Neck
+    400054: b_RightAnkle
+    400056: b_RightArm
+    400058: b_RightClav
+    400060: b_RightForeArm
+    400062: b_RightHand
+    400064: b_RightIndex1
+    400066: b_RightIndex2
+    400068: b_RightIndex3
+    400070: b_RightLeg
+    400072: b_RightLegUpper
+    400074: b_RightMiddle1
+    400076: b_RightMiddle2
+    400078: b_RightMiddle3
+    400080: b_RightPinky1
+    400082: b_RightPinky2
+    400084: b_RightPinky3
+    400086: b_RightRing1
+    400088: b_RightRing2
+    400090: b_RightRing3
+    400092: b_RightThumb1
+    400094: b_RightThumb2
+    400096: b_RightThumb3
+    400098: b_RightToe
+    400100: b_Spine
+    400102: b_Spine1
+    400104: b_Spine2
+    400106: Bip001 Footsteps
+    400108: Bip001 HeadNub
+    400110: Bip001 L Finger0Nub
+    400112: Bip001 L Finger1Nub
+    400114: Bip001 L Finger2Nub
+    400116: Bip001 L Finger3Nub
+    400118: Bip001 L Finger4Nub
+    400120: Bip001 L Toe0Nub
+    400122: Bip001 R Finger0Nub
+    400124: Bip001 R Finger1Nub
+    400126: Bip001 R Finger2Nub
+    400128: Bip001 R Finger3Nub
+    400130: Bip001 R Finger4Nub
+    400132: Bip001 R Toe0Nub
+    400134: EFoot
+    400136: //RootNode
+    400138: WeaponPivotLeft
+    400140: WeaponPivotRight
+    2300000: WeaponPivotLeft
+    2300002: WeaponPivotRight
+    3300000: WeaponPivotLeft
+    3300002: WeaponPivotRight
+    4300000: WeaponPivotLeft
+    4300002: WeaponPivotRight
+    4300004: EFoot
+    9500000: //RootNode
+    13700000: EFoot
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
