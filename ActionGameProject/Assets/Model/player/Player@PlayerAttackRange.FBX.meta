@@ -166,7 +166,7 @@ ModelImporter:
     4300008: DHand
     4300010: EFoot
     4300012: BUpperBody
-    7400000: Take 001
+    7400000: PlayerAttackRange
     9500000: //RootNode
     13700000: AHead
     13700002: BUpperBody
@@ -184,9 +184,17 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
+      copied configuration does not match position in animation file:\n\t'b_LeftLegUpper'
+      : position error = 68.640091 mm\n\t'b_RightLegUpper' : position error = 68.803490
+      mm\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'b_LeftClav' has translation animation that
+      will be discarded.\n\t'b_RightClav' has translation animation that will be discarded.\n\t'b_LeftLegUpper'
+      has translation animation that will be discarded.\n\t'b_RightLegUpper' has translation
+      animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -195,7 +203,197 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PlayerAttackRange
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AHead
+        weight: 0
+      - path: b_Bip
+        weight: 1
+      - path: b_Bip/b_Hips
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_LeftLegUpper
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_LeftLegUpper/b_LeftLeg
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_LeftLegUpper/b_LeftLeg/b_LeftAnkle
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_LeftLegUpper/b_LeftLeg/b_LeftAnkle/b_LeftToe
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_LeftLegUpper/b_LeftLeg/b_LeftAnkle/b_LeftToe/Bip001
+          L Toe0Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_RightLegUpper
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_RightLegUpper/b_RightLeg
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_RightLegUpper/b_RightLeg/b_RightAnkle
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_RightLegUpper/b_RightLeg/b_RightAnkle/b_RightToe
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_RightLegUpper/b_RightLeg/b_RightAnkle/b_RightToe/Bip001
+          R Toe0Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_Head
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_Head/Bip001 HeadNub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftIndex1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftIndex1/b_LeftIndex2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftIndex1/b_LeftIndex2/b_LeftIndex3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftIndex1/b_LeftIndex2/b_LeftIndex3/Bip001
+          L Finger1Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftMiddle1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftMiddle1/b_LeftMiddle2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftMiddle1/b_LeftMiddle2/b_LeftMiddle3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftMiddle1/b_LeftMiddle2/b_LeftMiddle3/Bip001
+          L Finger2Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftPinky1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftPinky1/b_LeftPinky2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftPinky1/b_LeftPinky2/b_LeftPinky3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftPinky1/b_LeftPinky2/b_LeftPinky3/Bip001
+          L Finger4Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftRing1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftRing1/b_LeftRing2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftRing1/b_LeftRing2/b_LeftRing3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftRing1/b_LeftRing2/b_LeftRing3/Bip001
+          L Finger3Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftThumb1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftThumb1/b_LeftThumb2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftThumb1/b_LeftThumb2/b_LeftThumb3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/b_LeftThumb1/b_LeftThumb2/b_LeftThumb3/Bip001
+          L Finger0Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_LeftClav/b_LeftArm/b_LeftForeArm/b_LeftHand/WeaponPivotLeft
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightIndex1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightIndex1/b_RightIndex2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightIndex1/b_RightIndex2/b_RightIndex3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightIndex1/b_RightIndex2/b_RightIndex3/Bip001
+          R Finger1Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightMiddle1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightMiddle1/b_RightMiddle2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightMiddle1/b_RightMiddle2/b_RightMiddle3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightMiddle1/b_RightMiddle2/b_RightMiddle3/Bip001
+          R Finger2Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightPinky1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightPinky1/b_RightPinky2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightPinky1/b_RightPinky2/b_RightPinky3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightPinky1/b_RightPinky2/b_RightPinky3/Bip001
+          R Finger4Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightRing1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightRing1/b_RightRing2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightRing1/b_RightRing2/b_RightRing3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightRing1/b_RightRing2/b_RightRing3/Bip001
+          R Finger3Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightThumb1
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightThumb1/b_RightThumb2
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightThumb1/b_RightThumb2/b_RightThumb3
+        weight: 1
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/b_RightThumb1/b_RightThumb2/b_RightThumb3/Bip001
+          R Finger0Nub
+        weight: 0
+      - path: b_Bip/b_Hips/b_Spine/b_Spine1/b_Spine2/b_Neck/b_RightClav/b_RightArm/b_RightForeArm/b_RightHand/WeaponPivotRight
+        weight: 0
+      - path: b_Bip/Bip001 Footsteps
+        weight: 0
+      - path: BUpperBody
+        weight: 0
+      - path: CLowerBody
+        weight: 0
+      - path: DHand
+        weight: 0
+      - path: EFoot
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

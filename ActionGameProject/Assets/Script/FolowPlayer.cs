@@ -16,7 +16,7 @@ public class FolowPlayer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//摄像机跟随位置
-		Vector3 targetPos = player.position + new Vector3(0.5f,5.4f,-16.29f);
+		Vector3 targetPos = player.position + new Vector3(0.5f,3.43f,-5.97f);
 		transform.position = Vector3.Lerp(transform.position,targetPos,speed * Time.deltaTime);
 
 		//摄像机跟随角度

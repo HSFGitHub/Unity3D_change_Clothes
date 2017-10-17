@@ -183,8 +183,17 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Script\ATKAndDamage.cs" />
+     <Compile Include="Assets\Script\AutoDestroy.cs" />
+     <Compile Include="Assets\Script\EnemySpawn.cs" />
+     <Compile Include="Assets\Script\EnemySpawnManagerScript.cs" />
      <Compile Include="Assets\Script\FolowPlayer.cs" />
+     <Compile Include="Assets\Script\JoystickScript.cs" />
      <Compile Include="Assets\Script\Menu_Contronller.cs" />
+     <Compile Include="Assets\Script\PlayerAnimationAttack.cs" />
+     <Compile Include="Assets\Script\PlayerMove.cs" />
+     <Compile Include="Assets\Script\SoulBossContoller.cs" />
+     <Compile Include="Assets\Script\SoulMonsterContoller.cs" />
      <Compile Include="Assets\Script\Tags.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.6.8.txt" />
