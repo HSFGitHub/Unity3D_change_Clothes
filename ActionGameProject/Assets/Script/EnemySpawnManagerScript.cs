@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Collections.Generic;
 public class EnemySpawnManagerScript : MonoBehaviour {
 
+	//写成一个单利
+	public static EnemySpawnManagerScript _instance;
 	//小怪物数组
 	public EnemySpawn [] monsterSpawnArray;
 
@@ -14,9 +16,18 @@ public class EnemySpawnManagerScript : MonoBehaviour {
 	//管理怪物集合
 	public List<GameObject> enemyList = new List<GameObject>();
 
+	/// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	void Awake()
+	{
+		if(_instance == null){
+			_instance = this;
+		}
+	}
 	// Use this for initialization
 	void Start () {
-
+	
 		StartCoroutine(randomSpawn());
 	}
 	

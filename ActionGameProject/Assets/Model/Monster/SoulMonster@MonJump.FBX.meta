@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3ecb21cbb100e467ab72fcf35ac297a7
-timeCreated: 1508135474
+timeCreated: 1508383008
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -170,7 +170,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
       copied configuration does not match position in animation file:\n\t'b_LeftLegUpper'
-      : position error = 21.600340 mm\n\t'b_RightLegUpper' : position error = 6.543289
+      : position error = 21.523518 mm\n\t'b_RightLegUpper' : position error = 6.520018
       mm\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
@@ -800,7 +800,7 @@ ModelImporter:
         length: 0
         modified: 0
     - boneName: b_Neck
-      humanName: UpperChest
+      humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 74b88c92174fd4a49ba65b26caf104f1
-timeCreated: 1508135427
+timeCreated: 1508316822
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -607,7 +607,7 @@ ModelImporter:
         length: 0
         modified: 0
     - boneName: b_Neck
-      humanName: UpperChest
+      humanName: Neck
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}

@@ -14,12 +14,12 @@ public class ATKAndDamage : MonoBehaviour {
 	public float attackDistance = 1;
 
 	//获取动画管理者
-	private Animator animator;
+	protected Animator animator;
 
 	/// <summary>
 	/// Awake is called when the script instance is being loaded.
 	/// </summary>
-	void Awake()
+	protected void Awake()
 	{
 		animator = this.GetComponent<Animator>();
 	}
@@ -32,20 +32,39 @@ public class ATKAndDamage : MonoBehaviour {
 
 		if (hp > 0)
 		{
-			//播放受到伤害动画
-			animator.SetTrigger("Damage");
-			//被打击的特效
-			if (this.tag == Tags.soulBoss)
-			{//当前受到攻击的对象时Boss
-		    	GameObject.Instantiate(Resources.Load("HitBoss"),transform.position,transform.rotation);
-			}else if(this.tag == Tags.soulMonster){
-				//当前受到攻击的对象是Boss
-				GameObject.Instantiate(Resources.Load("HitMonster"),transform.position,transform.rotation); 
+			if (this.tag == Tags.soulBoss || this.tag == Tags.soulMonster)
+			{		
+				//播放受到伤害动画
+				animator.SetTrigger("Damage");
 			}
 
 		}else{
-			//当五血量时，死亡
-			animator.SetBool("Dead",true);
+
+			if (animator.GetAnimatorTransitionInfo(0).IsName("Dead") == false)
+			{
+			   	//当无血量时，死亡。
+			   	animator.SetBool("Dead",true);
+
+				if (this.tag == Tags.soulBoss || this.tag == Tags.soulMonster){
+					//移除游戏怪物从数组中
+					EnemySpawnManagerScript._instance.enemyList.Remove(this.gameObject);
+					//销毁游戏物体
+					Destroy(this.gameObject,1);
+					//屏蔽游戏物体上的CharacterControllwer
+					this.GetComponent<CharacterController>().enabled = false;
+				}
+
+			}
+			
+		}
+
+		//被打击的特效
+		if (this.tag == Tags.soulBoss)
+		{   //当前受到攻击的对象时Boss
+		    GameObject.Instantiate(Resources.Load("HitBoss"),transform.position+Vector3.up,transform.rotation);
+		}else if(this.tag == Tags.soulMonster){
+			//当前受到攻击的对象是Boss
+			GameObject.Instantiate(Resources.Load("HitMonster"),transform.position+Vector3.up,transform.rotation); 
 		}
 
 	}

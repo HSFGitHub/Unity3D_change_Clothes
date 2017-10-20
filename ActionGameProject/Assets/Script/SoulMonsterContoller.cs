@@ -7,6 +7,8 @@ public class SoulMonsterContoller : MonoBehaviour {
 	///游戏玩家-->> Transform
 	private Transform playerTransform;
 
+	private PlayerATKAndDamage playerATKAndDamage;
+
 	///攻击距离
 	public float attackDistance  = 0.7f;
     
@@ -20,11 +22,16 @@ public class SoulMonsterContoller : MonoBehaviour {
 	//Animator动画控制机
 	private Animator monsterAnimator;
 
+
+
 	//攻击时间长度
 	public float attackTime = 2;
 
 	//攻击计时器	
 	private float attackTimer = 0;
+
+
+	
 
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
@@ -37,11 +44,19 @@ public class SoulMonsterContoller : MonoBehaviour {
 		monsterCharacter = this.GetComponent<CharacterController>();
 		monsterAnimator = this.GetComponent<Animator>();
 		attackTimer = attackTime;//记录时间，当一接触主角时，就让他攻击
+		//获取用户攻击属性
+		playerATKAndDamage = playerTransform.GetComponent<PlayerATKAndDamage>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+		if (playerATKAndDamage.hp <= 0)
+		{
+			monsterAnimator.SetBool("Walk",false);
+			return;
+		}
+
 		//monster一直看向游戏玩家
 		Vector3 targetPos = playerTransform.position;
 		targetPos.y = transform.position.y;

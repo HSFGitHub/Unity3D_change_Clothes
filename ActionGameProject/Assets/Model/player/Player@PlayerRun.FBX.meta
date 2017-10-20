@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f4f54b1fe826f49ac84dcf65ca5d0329
-timeCreated: 1506070670
+timeCreated: 1508316858
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -191,10 +191,12 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
-      improve retargeting quality.\n\t'b_LeftClav' has translation animation that
-      will be discarded.\n\t'b_RightClav' has translation animation that will be discarded.\n\t'b_LeftLegUpper'
-      has translation animation that will be discarded.\n\t'b_RightLegUpper' has translation
-      animation that will be discarded.\n"
+      improve retargeting quality.\n\t'b_Spine' has translation animation that will
+      be discarded.\n\t'b_Spine' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'b_LeftClav' has translation animation
+      that will be discarded.\n\t'b_RightClav' has translation animation that will
+      be discarded.\n\t'b_LeftLegUpper' has translation animation that will be discarded.\n\t'b_RightLegUpper'
+      has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -421,7 +423,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human:
-    - boneName: b_Spine
+    - boneName: b_Hips
       humanName: Hips
       limit:
         min: {x: 0, y: 0, z: 0}
