@@ -185,6 +185,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Script\ATKAndDamage.cs" />
      <Compile Include="Assets\Script\AutoDestroy.cs" />
+     <Compile Include="Assets\Script\AwardItem.cs" />
      <Compile Include="Assets\Script\Bullet.cs" />
      <Compile Include="Assets\Script\EnemySpawn.cs" />
      <Compile Include="Assets\Script\EnemySpawnManagerScript.cs" />
@@ -193,7 +194,9 @@
      <Compile Include="Assets\Script\Menu_Contronller.cs" />
      <Compile Include="Assets\Script\PlayerATKAndDamage.cs" />
      <Compile Include="Assets\Script\PlayerAnimationAttack.cs" />
+     <Compile Include="Assets\Script\PlayerAward.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
+     <Compile Include="Assets\Script\SoulBossATKAndDamage.cs" />
      <Compile Include="Assets\Script\SoulBossContoller.cs" />
      <Compile Include="Assets\Script\SoulMonsterATKAndDamage.cs" />
      <Compile Include="Assets\Script\SoulMonsterContoller.cs" />

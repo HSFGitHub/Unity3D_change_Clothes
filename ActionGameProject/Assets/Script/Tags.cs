@@ -12,4 +12,10 @@ public class Tags  {
 
 	//怪物Boss
 	public const string soulBoss = "SoulBoss";
+	
+	
+	/// <summary>
+	/// 地面
+	/// </summary>
+	public const string BottomGround = "BottomGround";
 }

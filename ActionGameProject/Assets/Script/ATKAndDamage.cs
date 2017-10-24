@@ -52,6 +52,9 @@ public class ATKAndDamage : MonoBehaviour {
 					Destroy(this.gameObject,1);
 					//屏蔽游戏物体上的CharacterControllwer
 					this.GetComponent<CharacterController>().enabled = false;
+
+					//死亡之后，生产掉落。
+					SpawnAward();
 				}
 
 			}
@@ -69,4 +72,23 @@ public class ATKAndDamage : MonoBehaviour {
 
 	}
 
+
+	/// <summary>
+	/// 怪物消失后，生产掉落物品。
+	/// </summary>
+	void SpawnAward(){
+		int count = Random.Range(1,3);
+
+		for(int i = 0;i < count; i ++ ){
+			int index = Random.Range(0,2);
+
+			if (index == 0)
+			{
+				GameObject.Instantiate(Resources.Load("Item-DualSword"),transform.position + Vector3.up,Quaternion.identity);
+			}else if (index == 1)
+			{
+				GameObject.Instantiate(Resources.Load("Item-Gun"),transform.position+  Vector3.up ,Quaternion.identity);
+			}
+		}
+	}
 }
