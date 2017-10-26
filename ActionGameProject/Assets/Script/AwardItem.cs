@@ -37,6 +37,11 @@ public class AwardItem : MonoBehaviour {
 	/// </summary>
 	private Transform playerTransform;
 
+
+	/// <summary>
+	/// 捡起物品的声音
+	/// </summary>
+	public AudioClip pickupClip;
 /***************************************播放方法**************************************/
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
@@ -61,6 +66,7 @@ public class AwardItem : MonoBehaviour {
 		   if(Vector3.Distance(transform.position,playerTransform.position+ Vector3.up) < 0.5f){
 			   playerTransform.GetComponent<PlayerAward>().GetAward(awardType);
 			   Destroy(this.gameObject);
+			   AudioSource.PlayClipAtPoint(pickupClip,transform.position,0.6f);
 		   }
 		}
 	}

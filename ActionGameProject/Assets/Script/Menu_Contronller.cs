@@ -5,6 +5,7 @@ using UnityEngine;
 public class Menu_Contronller : MonoBehaviour
 {
 
+	public static Menu_Contronller _instance;
 	public Color purple;
 
 	//头部
@@ -23,10 +24,22 @@ public class Menu_Contronller : MonoBehaviour
 	//改变全部颜色
 	public SkinnedMeshRenderer[] allChangeColor;
 
+
 	//存颜色
-	private Color[] colorArray;
+	[HideInInspector]
+	public Color[] colorArray;
 
 	private int colorIndex = -1;
+
+
+	/// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	void Awake()
+	{
+		_instance = this;
+	}
+
 	/// <summary>
 	/// Start is called on the frame when a script is enabled just before
 	/// any of the Update methods is called the first time.

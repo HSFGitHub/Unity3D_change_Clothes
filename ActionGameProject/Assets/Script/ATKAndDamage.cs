@@ -16,6 +16,9 @@ public class ATKAndDamage : MonoBehaviour {
 	//获取动画管理者
 	protected Animator animator;
 
+	//死亡的声音
+    public AudioClip dealthClip;
+
 	/// <summary>
 	/// Awake is called when the script instance is being loaded.
 	/// </summary>
@@ -44,7 +47,7 @@ public class ATKAndDamage : MonoBehaviour {
 			{
 			   	//当无血量时，死亡。
 			   	animator.SetBool("Dead",true);
-
+				AudioSource.PlayClipAtPoint(dealthClip,transform.position,0.5f);
 				if (this.tag == Tags.soulBoss || this.tag == Tags.soulMonster){
 					//移除游戏怪物从数组中
 					EnemySpawnManagerScript._instance.enemyList.Remove(this.gameObject);

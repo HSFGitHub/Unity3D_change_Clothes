@@ -10,20 +10,43 @@ public class PlayerATKAndDamage : ATKAndDamage {
 	//大范围攻击力100
 	public float attackRange = 100;
 
+	/// <summary>
+	/// 枪
+	/// </summary>
+	public WeaponGun gun;
+
+	/// <summary>
+	/// 攻击力
+	/// </summary>
+    public float attackGun =100;
+
+
+	/// <summary>
+	/// 射击播放声音
+	/// </summary>
+	public AudioClip shotClip;
+
+	/// <summary>
+	/// 普通攻击播放声音
+	/// </summary>
+	public AudioClip attackClip;
+
 	//人物发动样式
 	//A攻击普通攻击
 	public void AttackA(){
-
+			AudioSource.PlayClipAtPoint(attackClip,transform.position,0.6f);
 			AttackWithDamageValue(normalAttack);
 	}
 
 	//B攻击
 	public void AttackB(){
+		AudioSource.PlayClipAtPoint(attackClip,transform.position,0.6f);
 		AttackWithDamageValue(attackB);
 	}
 
 	//大范围攻击
 	public void AttackRange(){
+		AudioSource.PlayClipAtPoint(attackClip,transform.position,0.6f);
 		List<GameObject> enemyListTemp = new List<GameObject>();
 		foreach (GameObject item in EnemySpawnManagerScript._instance.enemyList)
 		{
@@ -44,7 +67,10 @@ public class PlayerATKAndDamage : ATKAndDamage {
 
 	//打枪方法
 	public void AttackGun(){
-
+      gun.shot();
+	  gun.attack = attackGun;
+	  //播放声音
+	  AudioSource.PlayClipAtPoint(shotClip,transform.position,0.5f);
 	}
 
 

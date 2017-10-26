@@ -82,6 +82,9 @@ public class PlayerAward : MonoBehaviour {
 		gunSwordGo.SetActive(false);
 		dualSwordTimer = exitTime;
 		gunTimer = 0;
+
+		//切换界面UI
+		UIAttack._instance.TurnToTwoAttack();
 	}
 
 	void TurnToGunSword(){
@@ -90,6 +93,8 @@ public class PlayerAward : MonoBehaviour {
 		gunSwordGo.SetActive(true);
 		gunTimer = exitTime;
 		dualSwordTimer = 0;
+
+		UIAttack._instance.TurnToOneAttack();
 	}
 
 	void TurnToSingalSword(){
@@ -98,5 +103,8 @@ public class PlayerAward : MonoBehaviour {
 		gunSwordGo.SetActive(false);
 		dualSwordTimer = 0;
 		gunTimer = 0;
+
+		//切换界面UI
+		UIAttack._instance.TurnToTwoAttack();
 	}
 }

@@ -59,7 +59,7 @@ public class PlayerAnimationAttack : MonoBehaviour {
 	///按下红色按钮攻击动画
 	public void OnRedAttackClick(){
 
-		playerAnimator.SetTrigger("AttackA");
+		playerAnimator.SetTrigger("AttackGun");
 	}
 
 

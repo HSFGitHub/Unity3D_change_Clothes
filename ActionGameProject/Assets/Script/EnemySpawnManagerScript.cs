@@ -16,6 +16,9 @@ public class EnemySpawnManagerScript : MonoBehaviour {
 	//管理怪物集合
 	public List<GameObject> enemyList = new List<GameObject>();
 
+	//游戏胜利声音
+	public AudioClip vectoryClip;
+
 	/// <summary>
 	/// Awake is called when the script instance is being loaded.
 	/// </summary>
@@ -60,6 +63,14 @@ public class EnemySpawnManagerScript : MonoBehaviour {
 		yield return new WaitForSeconds(0.5f);
 		monsterOrBossSpawn(true);
 
+
+		while (enemyList.Count > 0)
+		{
+			yield return new WaitForSeconds(0.2f);
+		}
+		
+		//胜利播放声音
+		AudioSource.PlayClipAtPoint(vectoryClip,transform.position,1f);
 	}
 	 
 // 生产怪物并加到EnemyList中

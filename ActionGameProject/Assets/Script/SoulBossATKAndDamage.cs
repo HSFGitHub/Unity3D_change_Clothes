@@ -10,6 +10,11 @@ public class SoulBossATKAndDamage : ATKAndDamage {
 		private Transform playerTransForm;
 
 		/// <summary>
+		/// 攻击状态时，播放声音
+		/// </summary>
+		public AudioClip attackClip;
+
+		/// <summary>
 		/// Awake is called when the script instance is being loaded.
 		/// </summary>
 		void Awake()
@@ -25,6 +30,8 @@ public class SoulBossATKAndDamage : ATKAndDamage {
 		/// 动画绑定方法 ----->>> 怪物普通攻击
 		/// </summary>
 		void Attack1(){
+
+			AudioSource.PlayClipAtPoint(attackClip,transform.position,1f);
 			//在攻击范围内. attackDistance 父类变量
 			if (Vector3.Distance(transform.position,playerTransForm.position) <= attackDistance)
 			{
@@ -37,6 +44,8 @@ public class SoulBossATKAndDamage : ATKAndDamage {
 		/// 动画绑定方法 ----->>> 怪物大范围攻击
 		/// </summary>
 		void Attack2(){
+
+			AudioSource.PlayClipAtPoint(attackClip,transform.position,0.5f);
 			//在攻击范围内. attackDistance 父类变量
 			if (Vector3.Distance(transform.position,playerTransForm.position) <= attackDistance)
 			{

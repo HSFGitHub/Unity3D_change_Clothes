@@ -15,6 +15,10 @@ public class WeaponGun : MonoBehaviour {
 	/// </summary>
 	public GameObject bulletPrefab;
 
+
+	/// <summary>
+	/// 攻击力
+	/// </summary>
 	public float attack = 100;
 
 	/// <summary>
